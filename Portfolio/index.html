@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <title>Zinedin Mezit</title>
+    <title>Portfolio</title>
     <style>
         html,body
         {
@@ -17,7 +17,7 @@
     {
         display:grid;
         grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows:725px 450px 350px 250px 100px;
+        grid-template-rows:725px 250px 350px 250px 100px;
     }
 
     
@@ -101,21 +101,51 @@
         grid-row:2/3;
         display:grid;
         grid-template-columns:1fr 1fr;
+       border-top:solid 7px #aa0041;
     }
 
 
     .skola1 /* BLOK 2.1 */
     {
-        background:tomato;
+        background: linear-gradient(#aa0041, #540316);
+        color:white;
+        background-size:cover;
         grid-column:1/2;
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:repeat(3,1fr);
+        align-items: center;
+        justify-items: center;
+        font-family: 'Karla', sans-serif;
+        text-align:center;
+
     }
 
     .skola2 /* BLOK 2.2 */
     {
-        background:turquoise;
+        background: linear-gradient(#aa0041, #540316);
+        color:white;
+        background-size:cover;
         grid-column:2/3;
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:repeat(3,1fr);
+        align-items: center;
+        justify-items: center;
+        font-family: 'Karla', sans-serif;
+        text-align:center;
     }
 
+    .logoSkola
+    {
+        grid-column:1/2;
+        grid-row:1/4;
+    }
+    .infoSkola
+    {
+        grid-column:2/4;
+        grid-row:1/4;
+    }
     .projects /* BLOK 3 */
     {
         background:burlywood;
@@ -147,13 +177,13 @@
                 <ul>
                     <li><a href="">OBRAZOVANJE</a></li>
                     <li><a href="">PROJEKTI</a></li>
-                    <li><a href="">INTERESOVANJA</a></li>
+                    <li><a href="">OSTALO</a></li>
           
                 </ul>
             </div>
 
             <div class="imeprezime">
-                    <h1>Zinedin Mezit</h1>
+                    <h1>ZINEDIN MEZIT</h1>
                     <h1 style="font-size:20px;">zinedin.mezit@edu.fit.ba</h1>
             </div>
 
@@ -166,13 +196,27 @@
         </div>
 
         <div class="information">
+
             <div class="skola1">
-                    <h1>Klasa:information</h1>
-                          
+            <div class="logoSkola">
+                    <img src="sets-logo.png" style="width:147px; height:147px;" />
+                </div>
+            <div class="infoSkola">
+                <h4>2013-2017</h4>
+                <h3 style="font-size:1.4em;">Srednja elektrotehnička škola,Sarajevo</h3>
+                <h4>Elektrotehničar računarstva i informatike</h4>
+            </div>                          
             </div>
 
            <div class="skola2">
-                <h1>Klasa:information2</h1>
+                <div class="logoSkola">
+                        <img src="fit-logo.png" style="width:157px; height:87px;" />
+                    </div>
+                    <div class="infoSkola">
+                        <h4>2017-2020</h4>
+                        <h3 style="font-size:1.4em;">Fakultet informacijskih tehnologija,Mostar</h3>
+                        <h4>Bachelor informacijskih tehnologija</h4>
+                    </div> 
            </div>
 
         </div>
