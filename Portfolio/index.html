@@ -1,277 +1,74 @@
-html,body
-{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:600" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
 
-}
+        <div class="bigpicture">
 
-/*#region MAIN*/
+            <div class="navigacija">
+                <ul>
+                    <li><a href="">OBRAZOVANJE</a></li>
+                    <li><a href="">PROJEKTI</a></li>
+                    <li><a href="">OSTALO</a></li>
+                </ul>
+            </div>
 
-.container
-{
-display:grid;
-grid-template-columns:1fr 1fr 1fr;
-grid-template-rows:725px auto  250px 1fr  100px;
-}
-/*#endregion MAIN*/
+            <div class="imeprezime">
+                    <h1>ZINEDIN MEZIT</h1>
+                    <h1>zinedin.mezit@edu.fit.ba</h1>
+            </div>
 
+            <div class="linkovi">
+                    <a  style="padding-bottom:5px;" href="https://www.github.com/lubenic4" target="_blank"><img  src="slike/github-logo.png" alt=""></a>
+                    <a  style="padding-top:5px;"  href="https://www.linkedin.com" target="_blank"><img  src="slike/linkedin-logo.png" alt=""></a>
+                    <a  style="padding-top:5px;"  href="https://www.facebook.com" target="_blank"><img   src="slike/facebook-logo.png" alt=""></a>
+                </div>
+       
+        </div>
 
-/*#region BLOK1*/
+        <div class="information">
 
-.bigpicture 
-{
-background:url("trianglify.png");
-background-size:cover;
-grid-column: 1/4;
-grid-row:1/2;
-display:grid;
-grid-template-columns:repeat(6,1fr);
-grid-template-rows:repeat(6,1fr);
-} 
+            <div class="skola1">
+            <div class="logoSkola">
+                    <img src="slike/sets-logo3.png" />
+                </div>
+            <div class="infoSkola">
+                <h4>2013-2017</h4>
+                <h3 style="font-size:1.4em;">Srednja elektrotehnička škola</h3>
+                <h4>Elektrotehničar računarstva i informatike</h4>
+            </div>                          
+            </div>
 
-.imeprezime
-{
-grid-column:1/7;
-grid-row:3/4;
-text-align:center;
-padding-top:35px;
-line-height:1.5px;
-font-family: 'Kanit', sans-serif;
-justify-self: center;
-align-self: center;
-}
+           <div class="skola2">
+                <div class="logoSkola">
+                        <img src="slike/fit-logo.png" />
+                    </div>
+                    <div class="infoSkola">
+                        <h4>2017-2020</h4>
+                        <h3 style="font-size:1.4em;">Fakultet informacijskih tehnologija</h3>
+                        <h4>Bachelor informacijskih tehnologija</h4>
+                    </div> 
+           </div>
 
-.linkovi
-{
-padding-left:20px;
-grid-column:1/2;
-grid-row:2/5;
-justify-self: start;
-align-self: center;
-margin-top:50px;
-}
+        </div>
 
-.navigacija
-{
-align-self:start;
-text-align:center;
-grid-column:1/7;
-grid-row:1/2;
-font-family: 'Kanit', sans-serif;
-/*
- position:fixed;
- left:0;
- right:0;
- */
-}
-.navigacija > ul
-{
-list-style-type: none;
-font-weight:bolder;
-margin: 0;
-padding: 10px;
-}
-.navigacija > ul > li
-{
-display:inline;
-}
+        <div class="interests">
+            <h1>Klasa:interests</h1>
+        </div>
 
+        <div class="footer">
+            <h1>Klasa:footer</h1>
+        </div>
 
-li a {
-color:black;
-text-align: center;
-padding: 16px;
-font-size:19px;
-text-decoration: none;
-}
-
-@media(max-width:415px)
-{
-.bigpicture 
-{
-background:url("trianglify.png");
-background-size:cover;
-grid-column: 1/4;
-grid-row:1/2;
-display:grid;
-grid-template-columns:repeat(6,1fr);
-grid-template-rows:repeat(6,1fr);
-} 
-
-.imeprezime
-{
-grid-column:1/7;
-grid-row:3/4;
-text-align:center;
-padding-top:35px;
-line-height:1.5px;
-font-family: 'Kanit', sans-serif;
-justify-self: center;
-align-self: center;
-}
-
-.linkovi
-{
-padding-left:20px;
-grid-column:1/2;
-grid-row:2/5;
-justify-self: start;
-align-self: center;
-margin-top:50px;
-}
-
-.navigacija
-{
-align-self:start;
-text-align:center;
-grid-column:1/7;
-grid-row:1/2;
-font-family: 'Kanit', sans-serif;
-/*
- position:fixed;
- left:0;
- right:0;
- */
-}
-.navigacija > ul
-{
-list-style-type: none;
-font-weight:bolder;
-margin: 0;
-padding: 10px;
-}
-.navigacija > ul > li
-{
-display:inline;
-}
-
-
-li a {
-color:black;
-text-align: center;
-padding: 16px;
-font-size:15px;
-text-decoration: none;
-}
-}
-
-/*#endregion BLOK1*/
-
-
-/*#region BLOK2*/
-
-.information 
-{
-grid-column:1/4;
-grid-row:2/3;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-}
-
-.skola1 /* BLOK 2.1 */
-{
-background: linear-gradient(#aa0041, #540316);
-color:white;
-background-size:cover;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-grid-template-rows:repeat(3,1fr);
-align-items: center;
-justify-items: center;
-font-family: 'Karla', sans-serif;
-text-align:center;
-
-}
-
-
-.skola2 
-{
-background: linear-gradient(#aa0041, #540316);
-color:white;
-background-size:cover;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-grid-template-rows:repeat(3,1fr);
-align-items: center;
-justify-items: center;
-font-family: 'Karla', sans-serif;
-text-align:center;
-}
-
-.logoSkola
-{
-padding:20px;
-grid-column:1/2;
-grid-row:1/4;
-}
-
-.logoSkola > img
-{
-width:100%;
-}
-
-.infoSkola
-{
-grid-column:2/4;
-grid-row:1/4;
-padding:10px;
-}
-
-@media(max-width:900px)
-{
-.information 
-{
-grid-column:1/4;
-grid-row:2/3;
-display:grid;
-grid-template-columns:1fr;
-}
-
-.skola2 
-{
-background: linear-gradient(#540316,#aa0041 );
-color:white;
-background-size:cover;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-grid-template-rows:repeat(3,1fr);
-align-items: center;
-justify-items: center;
-font-family: 'Karla', sans-serif;
-text-align:center;
-}
-
-}
-
-/*#endregion BLOK2*/
-
-
-
-
-
-
-
-
-
-
-
-/*#region BLOK3*/
-
-.interests
-{
-background:chocolate;
-grid-column:1/4;
-grid-row:3/4;
-}
-/*#endregion BLOK3*/
-
-
-/*#region BLOK4*/
-.footer
-{
-background:cyan;
-grid-column:1/4;
-grid-row:5/6;
-}
-/*#endregion BLOK4*/
+    </div>
+</body>
+</html>
