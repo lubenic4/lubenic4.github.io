@@ -50,13 +50,14 @@ body {
     display: block;
 }
 
-#navigacija {
+
+
+nav {
     text-align: center;
     font-family: 'Kanit', sans-serif;
     position: fixed;
     left: 0;
     right: 0;
-
 }
 
 .navigacija2 {
@@ -79,15 +80,16 @@ body {
 }
 
 
-#navigacija>ul {
+nav>ul {
     list-style-type: none;
     font-weight: bolder;
     margin: 0;
     width: 100%;
     padding: 10px;
+
 }
 
-#navigacija>ul>li {
+nav>ul>li {
     display: inline;
 }
 
@@ -100,8 +102,18 @@ li a {
     text-decoration: none;
 }
 
+.menu-toggle {
 
 
+    font-size: 40px;
+    display: none;
+
+
+}
+
+.menu-toggle>i {
+    cursor: pointer;
+}
 
 
 .information {
@@ -207,27 +219,23 @@ li a {
         margin-top: 50px;
     }
 
-    #navigacija {
+    /* nav {
         align-self: start;
         text-align: center;
         grid-column: 1/7;
         grid-row: 1/2;
         font-family: 'Kanit', sans-serif;
-        /*
- position:fixed;
- left:0;
- right:0;
- */
+
     }
 
-    #navigacija>ul {
+    nav>ul {
         list-style-type: none;
         font-weight: bolder;
         margin: 0;
         padding: 10px;
     }
 
-    #navigacija>ul>li {
+    nav>ul>li {
         display: inline;
     }
 
@@ -238,15 +246,44 @@ li a {
         padding: 16px;
         font-size: 16px;
         text-decoration: none;
-    }
+    } */
 }
 
 @media(max-width:750px) {
+
+    nav {
+        /*display: none;*/
+        position: absolute;
+        width: 100%;
+        height: 55%;
+        background: #333;
+        top: -100%;
+        transition: 0.5s;
+    }
+
+    nav.active {
+        top: 65px;
+    }
+
+    nav ul a {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-toggle {
+        grid-column: 1/7;
+        align-self: start;
+        padding: 10px;
+        display: block;
+        background: linear-gradient(#aa0041, #540316);
+    }
+
     .linkovi {
         grid-column: 1/7;
         grid-row: 4/5;
         justify-self: center;
         align-self: center;
+        margin-left: 0;
     }
 
     .linkovi>a {
