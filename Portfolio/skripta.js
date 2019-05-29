@@ -1,21 +1,15 @@
-window.onscroll=function()
-{
+window.onscroll = function () {
     var navig = document.getElementById('navigacija');
-    var opcije=document.getElementsByClassName('opcije');
-    if(window.pageYOffset>35)
-    {
+    var opcije = document.getElementsByClassName('opcije');
+    if (window.pageYOffset > 10) {
         navig.classList.add("navigacija2");
-        for(var i=0;i<opcije.length;i++)
-        {
-            opcije[i].style.color='white';
+        for (var i = 0; i < opcije.length; i++) {
+            opcije[i].style.color = 'white';
         }
-    }
-    else
-    {
+    } else {
         navig.classList.remove("navigacija2");
-        for(var i=0;i<opcije.length;i++)
-        {
-            opcije[i].style.color='black';
+        for (var i = 0; i < opcije.length; i++) {
+            opcije[i].style.color = 'black';
         }
     }
-}        
+}
