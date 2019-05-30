@@ -14,8 +14,15 @@ window.onscroll = function () {
     }
 }
 
+var brojac = 1;
 
 function kolaps() {
     naver = document.getElementById('realNav');
-    naver.classList.add('active');
+    if (brojac % 2 != 0) {
+        naver.classList.add('active');
+        brojac++;
+    } else {
+        naver.classList.remove('active');
+        brojac++;
+    }
 }
