@@ -1,10 +1,13 @@
 window.onscroll = function () {
     var navig = document.getElementById('realNav');
     var opcije = document.getElementsByClassName('opcije');
+    var x = window.matchMedia("(min-width:750px)");
     if (window.pageYOffset > 10) {
-        navig.classList.add("navigacija2");
-        for (var i = 0; i < opcije.length; i++) {
-            opcije[i].style.color = 'white';
+        if (x.matches) {
+            navig.classList.add("navigacija2");
+            for (var i = 0; i < opcije.length; i++) {
+                opcije[i].style.color = 'white';
+            }
         }
     } else {
         navig.classList.remove("navigacija2");
@@ -23,6 +26,6 @@ function kolaps() {
         brojac++;
     } else {
         naver.classList.remove('active');
-        brojac++;
+        brojac--;
     }
 }
