@@ -33,8 +33,12 @@ img {
 
 
 .bigpicture {
-    background: url("https://picsum.photos/id/1023/500/400");
-    background-size: cover;
+    background: #c31432;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c31432, #240b36);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c31432, #240b36);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     grid-column: 1/4;
     grid-row: 1/2;
     display: grid;
@@ -95,7 +99,7 @@ nav {
 
     100% {
 
-        background: #660027;
+        background: #5b0f32;
         border-bottom: 5px solid rgb(194, 192, 192);
     }
 }
