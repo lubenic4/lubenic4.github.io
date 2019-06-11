@@ -10,6 +10,7 @@ body {
 }
 
 h1,
+p,
 h2,
 h3,
 h4,
@@ -27,7 +28,7 @@ img {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100vh auto max-content;
+    grid-template-rows: 100vh auto 1fr;
 }
 
 
@@ -196,7 +197,7 @@ li a {
     grid-column: 1/6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 150px 400px;
     background: #0f0c29;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
@@ -217,24 +218,68 @@ li a {
 .projekatBox1 {
     grid-column: 1/2;
     grid-row: 2/3;
+    background: url("https://picsum.photos/id/1023/500/400");
+    background-size: cover;
+
 }
 
 .projekatBox2 {
     grid-column: 2/3;
     grid-row: 2/3;
+    background: url("https://picsum.photos/id/1024/500/400");
+    background-size: cover;
 
 }
 
 .projekatBox3 {
     grid-column: 3/4;
     grid-row: 2/3;
+    background: url("https://picsum.photos/id/1025/500/400");
+    background-size: cover;
+
+}
+
+.projekatBox {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.projekatBox>.opisProjekta {
+    grid-column: 1/2;
+    color: white;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 12, 29, 0.8);
 }
 
 
+.projekatBox:hover>.opisProjekta {
+    visibility: visible;
+    opacity: 1;
 
+}
 
+.projekatBox>.opisProjekta>.dodatno {
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+}
 
+.aLink {
+    text-decoration: none;
+    color: white;
+    transition: color 500ms linear;
+}
 
+.aLink:hover {
+    color: green;
+}
 
 /* MEDIA QUERIES */
 

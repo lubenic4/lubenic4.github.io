@@ -17,9 +17,10 @@ window.onscroll = function () {
     }
 }
 
-var brojac = 1;
 
 function kolaps() {
+    var brojac = 1;
+
     naver = document.getElementById('realNav');
     if (brojac % 2 != 0) {
         naver.classList.add('active');
