@@ -35,6 +35,7 @@ img {
 .bigpicture {
     background: url("Portfolio/trianglify.png");
     background-size: cover;
+    background-repeat: no-repeat;
     grid-column: 1/4;
     grid-row: 1/2;
     display: grid;
