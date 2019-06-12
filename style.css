@@ -28,7 +28,7 @@ img {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100vh auto max-content;
+    grid-template-rows: 100vh auto max-content 93vh 100px;
 }
 
 
@@ -82,6 +82,7 @@ nav {
     position: fixed;
     left: 0;
     right: 0;
+    z-index: 1;
 
 }
 
@@ -99,7 +100,7 @@ nav {
 
     100% {
 
-        background: #5b0f32;
+        background: black;
         border-bottom: 5px solid rgb(194, 192, 192);
     }
 }
@@ -198,7 +199,7 @@ li a {
 
 .projekti {
     grid-row: 3/4;
-    grid-column: 1/6;
+    grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px 400px;
@@ -208,7 +209,6 @@ li a {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .projekatNaslov {
@@ -281,15 +281,136 @@ li a {
     transition: color 500ms linear;
 }
 
+.aLink>p {
+    display: inline;
+}
+
 .aLink:hover {
     color: green;
 }
+
+.kontaktForma {
+    grid-row: 4/5;
+    grid-column: 1/4;
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+form {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #24243e;
+    color: white;
+    padding: 20px;
+    font-family: 'Karla', sans-serif;
+    width: 100%;
+    height: 100%;
+    justify-self: start;
+    align-self: center;
+    border-right: 5px solid rgb(194, 192, 192);
+
+
+}
+
+.labelica {
+    justify-self: center;
+    align-self: end;
+    text-transform: uppercase;
+}
+
+.inputica {
+    width: 250px;
+    height: 30px;
+    justify-self: center;
+    padding-left: 5px;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    background: black;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+}
+
+
+.dugmica {
+    font-family: 'Kanit', sans-serif;
+    justify-self: center;
+    width: 100px;
+    outline: none;
+    background: black;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.tekstica {
+    width: 450px;
+    justify-self: center;
+    font-family: 'Karla', sans-serif;
+    color: white;
+    background: black;
+    border: none;
+    padding-top: 15px;
+    padding-left: 15px;
+    outline: none;
+    resize: none;
+
+}
+
+.porukaKontakt {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.poruka1,
+.poruka2 {
+
+    font-family: 'Staatliches', cursive;
+    color: white;
+}
+
+.poruka1 {
+    font-size: 55px;
+}
+
+.poruka2 {
+    font-size: 35px;
+}
+
+.footer {
+    grid-row: 5/6;
+    grid-column: 1/4;
+    background: #0f0c29;
+
+
+}
+
+
+
+
 
 /* MEDIA QUERIES */
 
 @media(max-width:423px) {
     .bigpicture {
-        background: url("trianglify.png");
+        background: #c31432;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #c31432, #240b36);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #c31432, #240b36);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         background-size: cover;
         grid-column: 1/4;
         grid-row: 1/2;
@@ -371,6 +492,7 @@ li a {
 
         grid-template-columns: 1fr;
         grid-template-rows: 150px repeat(3, 350px);
+        border-bottom: none;
 
     }
 
