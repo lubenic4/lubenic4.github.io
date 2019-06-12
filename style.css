@@ -28,7 +28,7 @@ img {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100vh auto max-content 93vh 100px;
+    grid-template-rows: 100vh auto max-content auto 100px;
 }
 
 
@@ -361,8 +361,10 @@ form {
     border: none;
     padding-top: 15px;
     padding-left: 15px;
+    padding-right: 10px;
     outline: none;
     resize: none;
+    margin-top: 3px;
 
 }
 
@@ -441,6 +443,7 @@ form {
 }
 
 @media(max-width:750px) {
+
 
     nav {
         position: absolute;
@@ -561,7 +564,6 @@ form {
         color: white;
     }
 
-
 }
 
 @media(max-width:900px) {
@@ -587,6 +589,66 @@ form {
     }
 }
 
+@media(max-width:970px) {
+
+
+
+    .kontaktForma {
+
+        grid-template-rows: 1fr auto;
+    }
+
+    form {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        border-right: none;
+    }
+
+    .porukaKontakt {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .labelica {
+        justify-self: center;
+        align-self: end;
+        text-transform: uppercase;
+    }
+
+    .inputica {
+        margin-bottom: 10px;
+    }
+
+
+    .dugmica {
+        font-family: 'Kanit', sans-serif;
+        justify-self: center;
+        width: 100px;
+        outline: none;
+        background: black;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .tekstica {
+        width: 250px;
+    }
+
+
+    .poruka1 {
+        font-size: 20px;
+    }
+
+    .poruka2 {
+        font-size: 25px;
+    }
+
+}
+
 @media(max-width:1000px) {
     .imeprezime {
 
@@ -596,4 +658,15 @@ form {
     .email {
         font-size: 20px;
     }
+}
+
+@media(max-width:1070px) {
+    .poruka1 {
+        font-size: 45px;
+    }
+
+    .poruka2 {
+        font-size: 35px;
+    }
+
 }
