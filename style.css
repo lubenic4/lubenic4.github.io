@@ -330,6 +330,7 @@ form {
     width: 250px;
     height: 30px;
     justify-self: center;
+    align-self: center;
     padding-left: 5px;
     font-family: 'Karla', sans-serif;
     color: white;
@@ -383,11 +384,15 @@ form {
 }
 
 .poruka1 {
-    font-size: 55px;
+    font-size: 65px;
+    letter-spacing: 8px;
+
 }
 
 .poruka2 {
     font-size: 35px;
+    letter-spacing: 3px;
+
 }
 
 .footer {
@@ -639,7 +644,7 @@ form {
 
 
     .poruka1 {
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .poruka2 {
@@ -657,15 +662,4 @@ form {
     .email {
         font-size: 20px;
     }
-}
-
-@media(max-width:1070px) {
-    .poruka1 {
-        font-size: 45px;
-    }
-
-    .poruka2 {
-        font-size: 35px;
-    }
-
 }
