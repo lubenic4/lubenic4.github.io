@@ -28,7 +28,8 @@ img {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100vh auto max-content auto 100px;
+    grid-template-rows: 100vh auto max-content 93vh;
+    /*100px*/
 }
 
 
@@ -448,6 +449,9 @@ form {
 
 @media(max-width:750px) {
 
+    .container {
+        grid-template-rows: 100vh auto max-content 100vh;
+    }
 
     nav {
         position: absolute;
