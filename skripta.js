@@ -30,3 +30,15 @@ function kolaps() {
         brojac--;
     }
 }
+
+var inputIme = document.getElementById('imeInsert');
+inputIme.addEventListener('blur', provjera);
+
+function provjera() {
+    var rege = new RegExp('[A-Z]{3}');
+    if (!rege.test(inputIme.value)) {
+        inputIme.style.border = "3px solid red";
+    } else {
+        inputIme.style.border = "none";
+    }
+}

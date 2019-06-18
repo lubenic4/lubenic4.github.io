@@ -380,13 +380,13 @@ form {
 .poruka1,
 .poruka2 {
 
-    font-family: 'Staatliches', cursive;
+    font-family: 'Kanit', sans-serif;
     color: white;
+    text-transform: uppercase;
 }
 
 .poruka1 {
     font-size: 65px;
-    letter-spacing: 8px;
 
 }
 
