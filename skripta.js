@@ -5,15 +5,11 @@ window.onscroll = function () {
     if (window.pageYOffset > 10) {
         if (x.matches) {
             navig.classList.add("navigacija2");
-            for (var i = 0; i < opcije.length; i++) {
-                opcije[i].style.color = 'white';
-            }
+
         }
     } else {
         navig.classList.remove("navigacija2");
-        for (var i = 0; i < opcije.length; i++) {
-            opcije[i].style.color = 'black';
-        }
+
     }
 }
 
@@ -28,17 +24,5 @@ function kolaps() {
     } else {
         naver.classList.remove('active');
         brojac--;
-    }
-}
-
-var inputIme = document.getElementById('imeInsert');
-inputIme.addEventListener('blur', provjera);
-
-function provjera() {
-    var rege = new RegExp('[A-Z]{3}');
-    if (!rege.test(inputIme.value)) {
-        inputIme.style.border = "3px solid red";
-    } else {
-        inputIme.style.border = "none";
     }
 }

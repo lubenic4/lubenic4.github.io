@@ -49,31 +49,37 @@ img {
 
 .imeprezime {
     grid-column: 1/7;
-    grid-row: 3/4;
+    grid-row: 3/5;
     text-align: center;
-    padding-top: 35px;
     line-height: 2px;
     font-family: 'Kanit', sans-serif;
     font-size: 40px;
     justify-self: center;
-    align-self: center;
+    align-self: start;
+    color: rgb(233, 230, 230);
 }
 
 .email {
     font-size: 30px;
 }
 
-.linkovi {
-    margin-left: 20px;
-    grid-column: 1/2;
-    grid-row: 2/5;
-    justify-self: start;
-    align-self: center;
+.linkeri {
+    margin-top: 30px;
 }
 
-.linkovi>a {
+/* .linkovi {
+    grid-column: 6/7;
+    grid-row: 3/5;
+    justify-self: end;
+    align-self: center;
+
+} */
+
+/* .linkovi>a {
     display: block;
-}
+    width: 64px;
+    height: 64px;
+} */
 
 
 
@@ -87,11 +93,17 @@ nav {
 
 }
 
+nav>ul>li>a {
+    color: rgb(233, 230, 230);
+}
+
 .navigacija2 {
     animation-name: colorChanger;
     animation-duration: 500ms;
     animation-fill-mode: forwards;
 }
+
+
 
 @keyframes colorChanger {
 
@@ -101,10 +113,12 @@ nav {
 
     100% {
 
-        background: black;
+        background: rgb(138, 23, 56);
         border-bottom: 5px solid rgb(194, 192, 192);
     }
 }
+
+
 
 
 nav>ul {
@@ -218,6 +232,8 @@ li a {
     justify-self: center;
     align-self: center;
     color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
 }
 
 .projekatBox1 {
@@ -239,7 +255,7 @@ li a {
 .projekatBox3 {
     grid-column: 3/4;
     grid-row: 2/3;
-    background: url("https://picsum.photos/id/1025/500/400");
+    background: url("https://picsum.photos/id/1026/500/400");
     background-size: cover;
 
 }
@@ -339,6 +355,7 @@ form {
     border: none;
     outline: none;
     margin-top: 3px;
+    border-radius: 5px;
 }
 
 
@@ -351,6 +368,7 @@ form {
     border: none;
     color: white;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 .tekstica {
@@ -366,6 +384,7 @@ form {
     outline: none;
     resize: none;
     margin-top: 3px;
+    border-radius: 10px;
 
 }
 
@@ -437,13 +456,13 @@ form {
         align-self: center;
     }
 
-    .linkovi {
+    /* .linkovi {
         grid-column: 1/2;
         grid-row: 2/5;
         justify-self: start;
         align-self: center;
         margin-top: 50px;
-    }
+    } */
 
 }
 
@@ -481,14 +500,14 @@ form {
         background: linear-gradient(#aa0041, #540316);
     }
 
-    .linkovi {
+    /* .linkovi {
         grid-column: 1/7;
         grid-row: 4/5;
         justify-self: center;
         align-self: center;
         margin-left: 0;
-    }
-
+    } */
+    /* 
     .linkovi>a {
         display: inline;
         padding: 10px;
@@ -497,7 +516,7 @@ form {
     .linkovi>a>img {
         width: 32px;
         height: 32px;
-    }
+    } */
 
     .projekti {
 
@@ -534,7 +553,7 @@ form {
     .projekatBox3 {
         grid-column: 1/2;
         grid-row: 4/5;
-        background: url("https://picsum.photos/id/1025/500/400");
+        background: url("https://picsum.photos/id/1026/500/400");
         background-size: cover;
 
     }
