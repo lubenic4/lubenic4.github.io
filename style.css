@@ -402,6 +402,9 @@ form {
     font-family: 'Kanit', sans-serif;
     color: rgb(233, 230, 230);
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    display: inline;
 }
 
 .poruka1 {
@@ -413,6 +416,10 @@ form {
     font-size: 35px;
     letter-spacing: 3px;
 
+}
+
+.porukaa {
+    color: #c31432;
 }
 
 .footer {
