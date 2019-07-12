@@ -26,3 +26,15 @@ function kolaps() {
         brojac--;
     }
 }
+
+
+
+
+function prebaci(oznaka) {
+    var dio = document.getElementById(oznaka);
+    window.scrollTo({
+        top: dio.offsetTop - 48,
+        bottom: 0,
+        behavior: 'smooth'
+    });
+}

@@ -28,7 +28,7 @@ img {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100vh auto max-content 93vh;
+    grid-template-rows: 100vh auto 93vh 93vh;
     /*100px*/
 }
 
@@ -95,6 +95,7 @@ nav {
 
 nav>ul>li>a {
     color: rgb(233, 230, 230);
+    cursor: context-menu;
 }
 
 .navigacija2 {
@@ -217,7 +218,7 @@ li a {
     grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 400px;
+    grid-template-rows: 150px 1fr;
     background: #0f0c29;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
@@ -239,7 +240,7 @@ li a {
 .projekatBox1 {
     grid-column: 1/2;
     grid-row: 2/3;
-    background: url("https://picsum.photos/id/1023/500/400");
+    background: url("https://picsum.photos/id/1025/500/400");
     background-size: cover;
 
 }
@@ -255,7 +256,7 @@ li a {
 .projekatBox3 {
     grid-column: 3/4;
     grid-row: 2/3;
-    background: url("https://picsum.photos/id/1026/500/400");
+    background: url("https://picsum.photos/id/1023/500/400");
     background-size: cover;
 
 }
@@ -404,7 +405,6 @@ form {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    display: inline;
 }
 
 .poruka1 {
@@ -418,9 +418,6 @@ form {
 
 }
 
-.porukaa {
-    color: #c31432;
-}
 
 .footer {
     grid-row: 5/6;

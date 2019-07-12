@@ -12,21 +12,21 @@
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <title>Portfolio</title>
+    <title>Zinedin Mezit - Portfolio</title>
 </head>
 
 <body>
 
     <div class="container">
 
-        <div class="bigpicture">
+        <div id="section1" class="bigpicture">
 
             <nav id="realNav">
                 <ul>
-                    <li><a class="opcije" href="#">POČETNA</a></li>
-                    <li><a class="opcije" href="#">OBRAZOVANJE</a></li>
-                    <li><a class="opcije" href="#">RADOVI</a></li>
-                    <li><a class="opcije" href="#">KONTAKT</a></li>
+                    <li><a class="opcije" onclick="prebaci('section1')">POČETNA</a></li>
+                    <li><a class="opcije" onclick="prebaci('section2')">OBRAZOVANJE</a></li>
+                    <li><a class="opcije" onclick="prebaci('section3')">RADOVI</a></li>
+                    <li><a class="opcije" onclick="prebaci('section4')">KONTAKT</a></li>
                 </ul>
             </nav>
 
@@ -38,9 +38,10 @@
                 <h1>ZINEDIN MEZIT</h1>
                 <h1 class="email">zinedin.mezit@edu.fit.ba</h1>
                 <div class="linkeri">
-                    <img style="width:50px; height:50px;" src="Portfolio/slike/github.png" alt="">
-                    <img style="width:50px; height:50px;" src="Portfolio/slike/facebook.png" alt="">
-                    <img style="width:50px; height:50px;" src="Portfolio/slike/linkedin.png" alt="">
+                    <a href="https://github.com/lubenic4" target="_blank"><img style="width:50px; height:50px;"
+                            src="Portfolio/slike/github.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/zinedin-mezit-a0022518a" target="_blank"><img
+                            style="width:50px; height:50px;" src="Portfolio/slike/linkedin.png" alt=""></a>
                 </div>
             </div>
 
@@ -55,7 +56,7 @@
 
         </div>
 
-        <div class="information">
+        <div id="section2" class="information">
 
             <div class="skola1">
                 <div class="logoSkola">
@@ -81,7 +82,7 @@
 
         </div>
 
-        <div class="projekti">
+        <div id="section3" class="projekti">
 
             <div class="projekatNaslov">
                 <h1 style="border-bottom:3px solid rgb(233, 230, 230); ">RADOVI</h1>
@@ -126,7 +127,7 @@
         </div>
 
 
-        <div class="kontaktForma">
+        <div id="section4" class="kontaktForma">
             <form action="" autocomplete="off">
                 <label class="labelica" for="nameInput">IME</label>
                 <input id="imeInsert" placeholder="John" class="inputica" type="text" name="nameInput" id="nameInput">
