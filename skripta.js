@@ -13,21 +13,26 @@ window.onscroll = function () {
     }
 }
 
+console.log(window.innerWidth)
+
 var brojac = 1;
 
 function kolaps() {
 
     naver = document.getElementById('realNav');
-    if (brojac % 2 != 0) {
+    if (!naver.classList.contains('active')) {
         naver.classList.add('active');
-        brojac++;
     } else {
         naver.classList.remove('active');
-        brojac--;
     }
 }
 
-
+function dragBackNav() {
+    if (window.innerWidth < 750) {
+        naver = document.getElementById("realNav")
+        naver.classList.remove('active')
+    }
+}
 
 
 function prebaci(oznaka) {
