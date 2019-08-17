@@ -1,3 +1,0 @@
-# portfolio
-
-u izradi
