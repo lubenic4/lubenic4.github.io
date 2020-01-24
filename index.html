@@ -23,10 +23,9 @@
 
             <nav id="realNav">
                 <ul>
-                    <li><a class="opcije" onclick="prebaci('section1');dragBackNav();">POČETNA</a></li>
-                    <li><a class="opcije" onclick="prebaci('section2');dragBackNav();">OBRAZOVANJE</a></li>
-                    <li><a class="opcije" onclick="prebaci('section3');dragBackNav();">RADOVI</a></li>
-                    <li><a class="opcije" onclick="prebaci('section4');dragBackNav();">KONTAKT</a></li>
+                    <li><a class="opcije" id="opc1" onclick="prebaci('section1');dragBackNav();">POČETNA</a></li>
+                    <li><a class="opcije" id="opc2" onclick="prebaci('section2');dragBackNav();">RADOVI</a></li>
+                    <li><a class="opcije" id="opc3" onclick="prebaci('section3');dragBackNav();">KONTAKT</a></li>
                 </ul>
             </nav>
 
@@ -45,48 +44,9 @@
                 </div>
             </div>
 
-            <!-- <div class="linkovi">
-                <a style="padding-bottom:10px;" href="https://www.github.com" target="_blank"><img
-                        src="Portfolio/slike/github.png" alt=""></a>
-                <a style="padding-top:10px;" href="https://www.linkedin.com" target="_blank"><img
-                        src="Portfolio/slike/linkedin.png" alt=""></a>
-                <a style="padding-top:10px;" href="https://www.facebook.com" target="_blank"><img
-                        src="Portfolio/slike/facebook.png" alt=""></a>
-            </div> -->
-
         </div>
 
-        <div id="section2" class="information">
-
-            <div class="skola1">
-                <div class="logoSkola">
-                    <img src="Portfolio/slike/sets-logo3.png" />
-                </div>
-                <div class="infoSkola">
-                    <h4>2013-2017</h4>
-                    <h3 style="font-size:1.4em;">Srednja elektrotehnička škola</h3>
-                    <h4>Elektrotehničar računarstva i informatike</h4>
-                </div>
-            </div>
-
-            <div class="skola2">
-                <div class="logoSkola">
-                    <img src="Portfolio/slike/fit-logo.png" />
-                </div>
-                <div class="infoSkola">
-                    <h4>2017-2020</h4>
-                    <h3 style="font-size:1.4em;">Fakultet informacijskih tehnologija</h3>
-                    <h4>Bachelor informacijskih tehnologija</h4>
-                </div>
-            </div>
-
-        </div>
-
-        <div id="section3" class="projekti">
-
-            <div class="projekatNaslov">
-                <h1 style="border-bottom:3px solid rgb(233, 230, 230); ">RADOVI</h1>
-            </div>
+        <div id="section2" class="projekti">
 
             <div class="projekatBox projekatBox1">
                 <div class="opisProjekta">
@@ -127,7 +87,7 @@
         </div>
 
 
-        <div id="section4" class="kontaktForma">
+        <div id="section3" class="kontaktForma">
             <form action="https://formspree.io/zinedin.mezit.98@gmail.com" method="POST" autocomplete="off">
                 <label class="labelica" for="nameInput">IME</label>
                 <input id="imeInsert" placeholder="John" class="inputica" type="text" name="nameInput" id="nameInput">
