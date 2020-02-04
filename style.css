@@ -1,24 +1,20 @@
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
 }
 
 html,
 body {
     margin: 0;
     padding: 0;
-
+    overflow: hidden;
 }
 
-h1,
-p,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Kanit', sans-serif;
-
-}
 
 img {
     width: 100%;
@@ -28,17 +24,14 @@ img {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100vh 63vh 93vh;
+    grid-template-rows: 100vh 93vh 93vh;
     /*100px*/
 }
 
-
 .bigpicture {
-    background: #c31432;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #c31432, #240b36);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #c31432, #240b36);
+    cursor: context-menu;
+    background: rgb(155, 244, 164);
+    background: linear-gradient(90deg, rgba(155, 244, 164, 1) 0%, rgba(148, 187, 233, 1) 100%);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     grid-column: 1/4;
     grid-row: 1/2;
@@ -52,11 +45,10 @@ img {
     grid-row: 3/5;
     text-align: center;
     line-height: 2px;
-    font-family: 'Kanit', sans-serif;
     font-size: 40px;
     justify-self: center;
     align-self: start;
-    color: rgb(233, 230, 230);
+    color: black;
 }
 
 .email {
@@ -67,34 +59,16 @@ img {
     margin-top: 30px;
 }
 
-/* .linkovi {
-    grid-column: 6/7;
-    grid-row: 3/5;
-    justify-self: end;
-    align-self: center;
-
-} */
-
-/* .linkovi>a {
-    display: block;
-    width: 64px;
-    height: 64px;
-} */
-
-
-
 nav {
     text-align: center;
-    font-family: 'Kanit', sans-serif;
     position: fixed;
     left: 0;
     right: 0;
     z-index: 1;
-
 }
 
 nav>ul>li>a {
-    color: rgb(233, 230, 230);
+    color: black;
     cursor: context-menu;
 }
 
@@ -119,24 +93,23 @@ nav>ul>li>a {
 
 @keyframes fontColorChanger1 {
     70% {
-        color: black;
+        color: rgb(233, 230, 230);
     }
 
     100% {
-        color: black;
+        color: rgb(233, 230, 230);
     }
 }
 
 @keyframes fontColorChanger2 {
     70% {
-        color: rgb(233, 230, 230);
+        color: black;
     }
 
     100% {
-        color: rgb(233, 230, 230);
+        color: black;
     }
 }
-
 
 @keyframes colorChanger {
 
@@ -146,13 +119,10 @@ nav>ul>li>a {
 
     100% {
 
-        background: rgb(138, 23, 56);
+        background: #4F5D75;
         border-bottom: 5px solid rgb(194, 192, 192);
     }
 }
-
-
-
 
 nav>ul {
     list-style-type: none;
@@ -160,13 +130,11 @@ nav>ul {
     margin: 0;
     width: 100%;
     padding: 10px;
-
 }
 
 nav>ul>li {
     display: inline;
 }
-
 
 li a {
     color: black;
@@ -177,115 +145,48 @@ li a {
 }
 
 .menu-toggle {
-
-
     font-size: 40px;
     display: none;
-
-
 }
 
 .menu-toggle>i {
     cursor: pointer;
 }
 
-
-
 .projekti {
     grid-row: 2/3;
     grid-column: 1/4;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background: #ED6A5A;
+}
+
+
+.alati,
+.licniProjekti {
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    background: #0f0c29;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: context-menu;
 }
 
+.naslovAlati,
+.naslovLicniProjekti {
+    margin: 0;
+}
 
-
-.projekatBox1 {
+.listaAlata {
+    place-self: center;
     grid-column: 1/2;
     grid-row: 1/2;
-    background: url("https://picsum.photos/id/1025/500/400");
-    background-size: cover;
-
-}
-
-.projekatBox2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background: url("https://picsum.photos/id/1024/500/400");
-    background-size: cover;
-
-}
-
-.projekatBox3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    background: url("https://picsum.photos/id/1023/500/400");
-    background-size: cover;
-
-}
-
-.projekatBox {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.projekatBox>.opisProjekta {
-    grid-column: 1/2;
-    color: white;
-    display: grid;
     text-align: center;
-    grid-template-columns: 1fr;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-    width: 100%;
-    height: 100%;
-    background: rgba(15, 12, 29, 0.8);
-}
-
-
-.projekatBox:hover>.opisProjekta {
-    visibility: visible;
-    opacity: 1;
-
-}
-
-.projekatBox>.opisProjekta>.dodatno {
-    grid-column: 1/2;
-    align-self: center;
-    justify-self: center;
-}
-
-.aLink {
-    text-decoration: none;
-    color: white;
-    transition: color 500ms linear;
-}
-
-.aLink>p {
-    display: inline;
-}
-
-.aLink:hover {
-    color: green;
 }
 
 .kontaktForma {
+    cursor: context-menu;
     grid-row: 3/4;
     grid-column: 1/4;
-    background: #0f0c29;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #24243e;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -296,16 +197,14 @@ form {
     grid-row: 1/4;
     display: grid;
     grid-template-columns: 1fr;
+    border-right: 5px solid rgb(194, 192, 192);
     background: #24243e;
     color: white;
     padding: 20px;
-    font-family: 'Karla', sans-serif;
     width: 100%;
     height: 100%;
     justify-self: start;
     align-self: center;
-
-
 }
 
 .labelica {
@@ -320,7 +219,6 @@ form {
     justify-self: center;
     align-self: center;
     padding-left: 5px;
-    font-family: 'Karla', sans-serif;
     color: white;
     background: black;
     border: none;
@@ -331,7 +229,6 @@ form {
 
 
 .dugmica {
-    font-family: 'Kanit', sans-serif;
     justify-self: center;
     width: 100px;
     outline: none;
@@ -345,7 +242,6 @@ form {
 .tekstica {
     width: 450px;
     justify-self: center;
-    font-family: 'Karla', sans-serif;
     color: white;
     background: black;
     border: none;
@@ -356,7 +252,6 @@ form {
     resize: none;
     margin-top: 3px;
     border-radius: 10px;
-
 }
 
 .porukaKontakt {
@@ -369,8 +264,6 @@ form {
 
 .poruka1,
 .poruka2 {
-
-    font-family: 'Kanit', sans-serif;
     color: rgb(233, 230, 230);
     text-transform: uppercase;
     margin: 0;
@@ -379,13 +272,11 @@ form {
 
 .poruka1 {
     font-size: 65px;
-
 }
 
 .poruka2 {
     font-size: 35px;
     letter-spacing: 3px;
-
 }
 
 
@@ -393,8 +284,6 @@ form {
     grid-row: 5/6;
     grid-column: 1/4;
     background: #0f0c29;
-
-
 }
 
 
@@ -404,14 +293,9 @@ form {
 /* MEDIA QUERIES */
 
 @media(max-width:423px) {
+
     .bigpicture {
-        background: #c31432;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #c31432, #240b36);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #c31432, #240b36);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        background-size: cover;
+
         grid-column: 1/4;
         grid-row: 1/2;
         display: grid;
@@ -425,32 +309,27 @@ form {
         text-align: center;
         padding-top: 35px;
         line-height: 1.5px;
-        font-family: 'Kanit', sans-serif;
         justify-self: center;
         align-self: center;
     }
-
-    /* .linkovi {
-        grid-column: 1/2;
-        grid-row: 2/5;
-        justify-self: start;
-        align-self: center;
-        margin-top: 50px;
-    } */
-
 }
 
 @media(max-width:750px) {
 
+    body,
+    html {
+        overflow: initial;
+    }
+
     .container {
-        grid-template-rows: 100vh max-content 100vh;
+        grid-template-rows: 100vh 93vh 93vh;
     }
 
     nav {
         position: fixed;
         width: 100%;
-        height: 45%;
-        background: linear-gradient(#aa0041, #540316);
+        height: 30%;
+        background: rgb(105, 117, 139);
         left: -100%;
         top: 65px;
         transition: 0.5s;
@@ -473,85 +352,15 @@ form {
         align-self: start;
         padding: 10px;
         display: block;
-        background: linear-gradient(#aa0041, #540316);
+
+        background: #4F5D75;
     }
-
-
-    .projekti {
-
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 350px);
-        border-bottom: none;
-
-    }
-
-
-    .projekatBox1 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        background: url("https://picsum.photos/id/1023/500/400");
-        background-size: cover;
-
-    }
-
-    .projekatBox2 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        background: url("https://picsum.photos/id/1024/500/400");
-        background-size: cover;
-
-    }
-
-    .projekatBox3 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-        background: url("https://picsum.photos/id/1026/500/400");
-        background-size: cover;
-
-    }
-
-    .projekatBox>.opisProjekta {
-
-        visibility: visible;
-        opacity: 1;
-        transition: visibility 0s, opacity 0.5s linear;
-        width: 100%;
-        height: 100%;
-        background: rgba(15, 12, 29, 0.9);
-    }
-
-
-    .projekatBox:hover>.opisProjekta {
-        visibility: visible;
-        opacity: 1;
-
-    }
-
-    .projekatBox>.opisProjekta>.dodatno {
-        grid-column: 1/2;
-        align-self: center;
-        justify-self: center;
-    }
-
-    .aLink {
-        text-decoration: none;
-        color: white;
-        transition: color 500ms linear;
-    }
-
-    .aLink:hover {
-        color: white;
-    }
-
 }
 
 
 @media(max-width:970px) {
 
-
-
     .kontaktForma {
-
         grid-template-rows: 1fr auto;
     }
 
@@ -581,7 +390,6 @@ form {
 
 
     .dugmica {
-        font-family: 'Kanit', sans-serif;
         justify-self: center;
         width: 100px;
         outline: none;
@@ -601,7 +409,6 @@ form {
 
 @media(max-width:1000px) {
     .imeprezime {
-
         font-size: 30px;
     }
 

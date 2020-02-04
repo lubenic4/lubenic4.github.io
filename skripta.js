@@ -8,6 +8,8 @@ var opc1 = document.getElementById("opc1");
 var opc2 = document.getElementById("opc2");
 var opc3 = document.getElementById("opc3");
 
+var mojaForma = document.getElementById("mojaForma");
+
 console.log("sec1 offset " + sec1Start);
 console.log("sec2 offset " + sec2Start);
 console.log("sec3 offset " + sec3Start);
@@ -46,7 +48,7 @@ window.onscroll = function () {
         brojacSekcija2++;
         if (this.opc3.classList.contains("sectionColorChange1")) {
             this.opc3.classList.remove("sectionColorChange1");
-            this.opc3.classList.add("sectionColorChange2")
+            this.opc3.classList.add("sectionColorChange2");
         }
 
         if (this.opc2.classList.contains("sectionColorChange2"))

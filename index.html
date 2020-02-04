@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kanit:600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Zinedin Mezit - Portfolio</title>
@@ -23,9 +20,9 @@
 
             <nav id="realNav">
                 <ul>
-                    <li><a class="opcije" id="opc1" onclick="prebaci('section1');dragBackNav();">POČETNA</a></li>
-                    <li><a class="opcije" id="opc2" onclick="prebaci('section2');dragBackNav();">RADOVI</a></li>
-                    <li><a class="opcije" id="opc3" onclick="prebaci('section3');dragBackNav();">KONTAKT</a></li>
+                    <li><a class="opcije" id="opc1" onclick="prebaci('section1');dragBackNav();">HOME</a></li>
+                    <li><a class="opcije" id="opc2" onclick="prebaci('section2');dragBackNav();">ABOUT</a></li>
+                    <li><a class="opcije" id="opc3" onclick="prebaci('section3');dragBackNav();">CONTACT</a></li>
                 </ul>
             </nav>
 
@@ -48,72 +45,61 @@
 
         <div id="section2" class="projekti">
 
-            <div class="projekatBox projekatBox1">
-                <div class="opisProjekta">
-                    <div class="dodatno">
-                        <h1>Naziv projekta</h1>
-                        <p>Kratke informacije o projektu</p>
-                        <a class="aLink" href="#">
-                            <p>link</p>
-                        </a>
-                    </div>
+            <div class="alati">
+                <div class="listaAlata">
+                    <h1 class="naslovAlati">Skill set</h1>
+                    <p>Kotlin</p>
+                    <p>Android SDK</p>
+                    <p>MVVM Pattern</p>
+                    <p>C#</p>
+                    <p>ASP.NET Core</p>
+                    <p>MVC Pattern</p>
+                    <p>Microsoft SQL Server</p>
+                    <p>SQLite</p>
                 </div>
             </div>
 
-            <div class="projekatBox projekatBox2">
-                <div class="opisProjekta">
-                    <div class="dodatno">
-                        <h1>Naziv projekta</h1>
-                        <p>Kratke informacije o projektu</p>
-                        <a class="aLink" href="#">
-                            <p>link</p>
-                        </a>
-                    </div>
+            <div class="licniProjekti">
+                <div class="listaAlata">
+                    <h1 class="naslovAlati">Projects</h1>
+
+                    <h3 style="display:inline-block;color:black;">Quiz time</h3>
+
+                    <p style="margin:0;  padding-left:10px;padding-right: 10px;">Simple quiz app made for Android
+                        platform (<a style="display:inline-block;color:black;"
+                            href="https://github.com/lubenic4/quiztime" target="_blank">link</a>)</p>
                 </div>
             </div>
 
-            <div class="projekatBox projekatBox3">
-                <div class="opisProjekta">
-                    <div class="dodatno">
-                        <h1>Naziv projekta</h1>
-                        <p>Kratke informacije o projektu</p>
-                        <a class="aLink" href="#">
-                            <p>link</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
 
         </div>
 
 
         <div id="section3" class="kontaktForma">
-            <form action="https://formspree.io/zinedin.mezit.98@gmail.com" method="POST" autocomplete="off">
-                <label class="labelica" for="nameInput">IME</label>
+            <form id="mojaForma" action="https://formspree.io/zinedin.mezit.98@gmail.com" method="POST"
+                autocomplete="off">
+                <label class="labelica" for="nameInput">First name</label>
                 <input id="imeInsert" placeholder="John" class="inputica" type="text" name="nameInput" id="nameInput">
-                <label class="labelica" for="prezimeInput">PREZIME</label>
+                <label class="labelica" for="prezimeInput">Last name</label>
                 <input placeholder="Smith" class="inputica" type="text" name="prezimeInput" id="prezimeInput">
-                <label class="labelica" for="emailInput">E-MAIL</label>
+                <label class="labelica" for="emailInput">Email</label>
                 <input placeholder="john.smith@gmail.com" class="inputica" type="text" name="emailInput"
                     id="emailInput">
-                <label class="labelica" for="tekstInput">PORUKA</label>
+                <label class="labelica" for="tekstInput">Message</label>
                 <textarea placeholder="Be nice :)" spellcheck="false" class="tekstica" name="tekstInput" id="tekstInput"
                     cols="30" rows="10"></textarea>
                 <br>
-                <button id="dugmeForma" class="dugmica" type="submit">POŠALJI</button>
+                <button id="dugmeForma" class="dugmica" type="submit">Send</button>
             </form>
 
             <div class="porukaKontakt">
 
-                <h1 class="poruka1">Imate pitanje?</h1>
-                <h2 class="poruka2"> <span class="porukaa">Pošaljite poruku</span>.</h2>
+                <h1 class="poruka1">Any questions?</h1>
+                <h2 class="poruka2"> <span class="porukaa">Contact me</span>.</h2>
 
             </div>
         </div>
-
-        <!-- <div class="footer">
-            <h1>footer</h1>
-        </div> -->
 
     </div>
     <script src="skripta.js">
