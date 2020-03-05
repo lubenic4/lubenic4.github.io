@@ -30,9 +30,8 @@ img {
 
 .bigpicture {
     cursor: context-menu;
-    background: rgb(155, 244, 164);
-    background: linear-gradient(90deg, rgba(155, 244, 164, 1) 0%, rgba(148, 187, 233, 1) 100%);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(255, 92, 72);
+    background: linear-gradient(90deg, rgba(255, 92, 72, 1) 0%, rgba(36, 36, 62, 1) 100%);
     grid-column: 1/4;
     grid-row: 1/2;
     display: grid;
