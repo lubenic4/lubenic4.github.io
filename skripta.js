@@ -28,10 +28,11 @@ window.onscroll = function () {
     if (window.pageYOffset > 10) {
         if (x.matches) {
             navig.classList.add("navigacija2");
-
+            navig.classList.remove("navigacija3");
         }
     } else {
         navig.classList.remove("navigacija2");
+        navig.classList.add("navigacija3");
     }
     var currentScrollY = window.scrollY;
 
