@@ -131,15 +131,6 @@ img {
     margin: 0;
 }
 
-.pContent {
-    color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-    grid-row: 2/3;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
 .pPreview {
     justify-self: center;
 }
