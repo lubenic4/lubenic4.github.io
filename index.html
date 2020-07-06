@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
     <title>Zinedin Mezit - Portfolio</title>
 </head>
 
@@ -18,21 +17,9 @@
 
         <div id="section1" class="bigpicture">
 
-            <nav id="realNav">
-                <ul>
-                    <li><a class="opcije" id="opc1" onclick="prebaci('section1');dragBackNav();">HOME</a></li>
-                    <li><a class="opcije" id="opc2" onclick="prebaci('section2');dragBackNav();">ABOUT</a></li>
-                    <li><a class="opcije" id="opc3" onclick="prebaci('section3');dragBackNav();">CONTACT</a></li>
-                </ul>
-            </nav>
-
-            <div class="menu-toggle">
-                <i id="theChosen" class="fas fa-bars" onclick="kolaps()"></i>
-            </div>
-
             <div class="imeprezime">
                 <h1>ZINEDIN MEZIT</h1>
-                <h1 class="email">zinedin.mezit.98@gmail.com</h1>
+                <h1 class="email">zinedinmezit.998@gmail.com</h1>
                 <div class="linkeri">
                     <a href="https://github.com/lubenic4" target="_blank"><img style="width:50px; height:50px;"
                             src="Portfolio/slike/github.png" alt=""></a>
@@ -40,64 +27,78 @@
                             style="width:50px; height:50px;" src="Portfolio/slike/linkedin.png" alt=""></a>
                 </div>
             </div>
-
         </div>
 
-        <div id="section2" class="projekti">
+        <div id="section2" class="alati">
+            <div class="kotlin languages">
+                <img src="Portfolio/slike/kotlin.png" alt="">
+            </div>
+            <div class="android languages">
+                <img src="Portfolio/slike/android.png" alt="">
+            </div>
+            <div class="csharp languages">
+                <img src="Portfolio/slike/csharp.png" alt="">
+            </div>
+            <div class="xamarin languages">
+                <img src="Portfolio/slike/xamarin.png" alt="">
+            </div>
+            <div class="sql languages">
+                <img src="Portfolio/slike/sql.png" alt="">
+            </div>
+        </div>
 
-            <div class="alati">
-                <div class="listaAlata">
-                    <h1 class="naslovAlati">Interests :</h1>
-                    <p>Kotlin</p>
-                    <p>Android SDK</p>
-                    <p>C#</p>
-                    <p>ASP.NET Core</p>
-                    <p>Microsoft SQL Server</p>
-                    <p>SQLite</p>
+        <div class="projekti">
+            <div class="projekt1 pgrid">
+
+                <div class="pHeading">
+
+                    <div>
+                        <h2 style="color: white;">Cartoon fandom</h2>
+                    </div>
+
+                    <div class="imgDiv">
+                        <img class="tech" src="Portfolio/slike/mobile.png" alt="">
+                        <img class="tech" src="Portfolio/slike/monitor.png" alt="">
+                    </div>
                 </div>
+
             </div>
 
-            <div class="licniProjekti">
-                <div class="listaAlata">
-                    <h1 class="naslovAlati">Projects :</h1>
+            <div class="projekt2 pgrid">
 
-                    <h3 style="display:inline-block;color:black;margin-bottom: 0px;">Quiz time</h3>
+                <div class="pHeading">
 
-                    <p style="margin:0;  padding-left:10px;padding-right: 10px;">Simple quiz app made for Android
-                        platform (<a style="display:inline-block;color:black;"
-                            href="https://github.com/lubenic4/quiztime" target="_blank">link</a>)</p>
+                    <div>
+                        <h2 style="color: white;">Notes app</h2>
+                    </div>
+
+                    <div class="imgDiv">
+                        <img class="tech" src="Portfolio/slike/mobile.png" alt="">
+                    </div>
                 </div>
+
+
             </div>
 
+            <div class="projekt3 pgrid">
 
+                <div class="pHeading">
 
-        </div>
+                    <div>
+                        <h2 style="color: white;">Irrigation system prototype</h2>
+                    </div>
 
+                    <div class="imgDiv">
+                        <img class="tech" src="Portfolio/slike/mobile.png" alt="">
+                        <img class="tech" src="Portfolio/slike/iot.png" alt="">
+                    </div>
+                </div>
 
-        <div id="section3" class="kontaktForma">
-            <form id="mojaForma" action="https://formspree.io/zinedin.mezit.98@gmail.com" method="POST"
-                autocomplete="off">
-                <label class="labelica" for="nameInput">First name</label>
-                <input id="imeInsert" placeholder="John" class="inputica" type="text" name="nameInput" id="nameInput">
-                <label class="labelica" for="prezimeInput">Last name</label>
-                <input placeholder="Smith" class="inputica" type="text" name="prezimeInput" id="prezimeInput">
-                <label class="labelica" for="emailInput">Email</label>
-                <input placeholder="john.smith@gmail.com" class="inputica" type="text" name="emailInput"
-                    id="emailInput">
-                <label class="labelica" for="tekstInput">Message</label>
-                <textarea placeholder="Be nice :)" spellcheck="false" class="tekstica" name="tekstInput" id="tekstInput"
-                    cols="30" rows="10"></textarea>
-                <br>
-                <button id="dugmeForma" class="dugmica" type="submit">Send</button>
-            </form>
-
-            <div class="porukaKontakt">
-
-                <h1 class="poruka1">Any questions?</h1>
-                <h2 class="poruka2"> <span class="porukaa">Contact me</span>.</h2>
 
             </div>
         </div>
+
+    </div>
 
     </div>
     <script src="skripta.js">
