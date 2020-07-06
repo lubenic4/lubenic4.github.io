@@ -123,7 +123,7 @@ img {
 
 .headDiv {
     justify-self: center;
-    align-self: end;
+    align-self: center;
 }
 
 .headText {
@@ -133,8 +133,11 @@ img {
 
 .pContent {
     color: white;
-    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     grid-row: 2/3;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .pText {
