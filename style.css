@@ -140,6 +140,10 @@ img {
     text-justify: inter-word;
 }
 
+.pPreview {
+    justify-self: center;
+}
+
 .pText {
     margin: 0;
 }
