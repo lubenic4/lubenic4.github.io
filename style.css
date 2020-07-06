@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    font-size: 100%;
 }
 
 
@@ -123,6 +124,11 @@ img {
 .headDiv {
     justify-self: center;
     align-self: end;
+}
+
+.headText {
+    color: white;
+    margin: 0;
 }
 
 .pContent {
